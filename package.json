@@ -1,0 +1,22 @@
+{
+  "name": "books-ui-tests",
+  "version": "1.0.0",
+  "description": "\"# books-ui-tests\"",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kzarama/books-ui-tests.git"
+  },
+  "author": "kzarama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kzarama/books-ui-tests/issues"
+  },
+  "homepage": "https://github.com/Kzarama/books-ui-tests#readme",
+  "dependencies": {
+    "cypress": "^6.8.0"
+  }
+}
