@@ -6,6 +6,7 @@ describe('When the user wants to create a book', () => {
     before('Enter in the page of books ui', () => {
         cy.visit('https://ui-books.herokuapp.com/dashboard')
         cy.get('.ant-btn-primary > .ng-star-inserted').click()
+        cy.wait(1000)
         cy.get('#name').type(book_name)
         cy.get('#author').type(book_author)
         cy.get('.ant-modal-footer > .ant-btn-primary').click()
