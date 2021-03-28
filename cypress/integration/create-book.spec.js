@@ -9,6 +9,7 @@ describe('When the user wants to create a book', () => {
 
     it('Create the book and be listed with the right name and author', () => {
         cy.get('.ant-btn-primary > .ng-star-inserted').click()
+        cy.wait(1000)
         cy.get('#name').type(book_name)
         cy.get('#author').type(book_author)
         cy.get('.ant-modal-footer > .ant-btn-primary').click()
@@ -35,6 +36,7 @@ describe('When the user wants to create a book', () => {
 
     it('When the user cancels the creation of a book', () => {
         cy.get('.ant-btn-primary > .ng-star-inserted').click()
+        cy.wait(1000)
         cy.get('#name').type(book_name)
         cy.get('#author').type(book_author)
         cy.get('.ant-modal-footer > [nztype="default"]').click()
