@@ -4,7 +4,8 @@
   "description": "\"# books-ui-tests\"",
   "main": "index.js",
   "scripts": {
-    "test:ui": "cypress open"
+    "test:ui": "cypress open",
+    "test:e2e:ui": "cypress run"
   },
   "repository": {
     "type": "git",
